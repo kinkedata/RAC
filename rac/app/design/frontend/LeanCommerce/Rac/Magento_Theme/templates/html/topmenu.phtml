@@ -1,0 +1,47 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @var $block \Magento\Theme\Block\Html\Topmenu
+ */
+?>
+<?php $columnsLimit = $block->getColumnsLimit() ?: 0; ?>
+<?php $_menu = $block->getHtml('level-top', 'submenu', $columnsLimit) ?>
+
+
+<div class="nav-container">
+    <nav id="main-nav" class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".main-nav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse main-nav">
+            <ul class="main-menu nav navbar-nav">
+                <?= /* @escapeNotVerified */ $_menu ?>
+                <?= /* @escapeNotVerified */ $block->getChildHtml() ?>
+            </ul>
+        </div>
+    </nav>
+</div>
+<?php
+
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$showtimer = $objectManager->get('Magento\Framework\App\Config\ScopeConfigInterface')->getValue('slider/general/timer');
+?>
+<script type="text/javascript">
+
+    window.sliderTime = parseInt(<?php echo $showtimer ?>);
+</script>

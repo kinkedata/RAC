@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        
+        <referenceBlock name="page.main.title" remove="false" />
+        
+        <move element="page.main.title" destination="product.info.media" before="-"/>
+        <move element="product.info.stock.sku" destination="product.info.price" after="product.price.final"/>
+        <move element="product.info.review" destination="product.info.main" before="product.info.price"/>
+        
+        <referenceBlock name="product.price.final" remove="true" />
+        <referenceBlock name="product.info.price" remove="true" />
+        
+        
+        <container name="product.call.to.action.container" label="Product Call to action RAC">
+            <block name="product.call.to.action.rac"></block>
+        </container>
+        
+        <move element="product.call.to.action.container" destination="product.info.main" />
+    </body>
+</page>

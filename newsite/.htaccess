@@ -1,0 +1,51 @@
+
+# BEGIN WordPress
+# Las directivas (líneas) entre "BEGIN WordPress" y "END WordPress" son
+# generadas dinámicamente y solo deberían ser modificadas mediante filtros de WordPress.
+# Cualquier cambio en las directivas que hay entre esos marcadores serán sobrescritas.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /rac/newsite/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /rac/newsite/index.php [L]
+</IfModule>
+
+Redirect 301 /productos-serta https://www.rac.mx/productos/muebles/colchones
+Redirect 301 /solicita-informacion https://www.rac.mx/solicita-informes
+Redirect 301 /productos/linea-blanca/ventiladores https://www.rac.mx/productos/linea-blanca/
+Redirect 301 /ubicacion-de-tiendas https://www.rac.mx/ubica-tu-tienda/
+Redirect 301 /promociones-del-mes https://www.rac.mx/promociones/
+Redirect 301 /productos/celulares/sma217blck https://www.rac.mx/productos/celulares/
+Redirect 301 /productos-xbox-one https://www.rac.mx/productos/consola-xbox-one-s-1-tb-reacondicionado/
+Redirect 301 /sugerencias https://www.rac.mx/solicita-informes/
+Redirect 301 /productos/electronicos/estereos/bafle-ghia https://www.rac.mx/productos/electronicos/
+Redirect 301 /productos/muebles/comedores/comedor-san-carlos-con-6-sillas https://www.rac.mx/productos/muebles/comedores/
+Redirect 301 /productos/electronicos/pantallas/smart-tv-hisense-50 https://www.rac.mx/productos/electronicos/pantallas
+Redirect 301 /productos-motorola https://www.rac.mx/productos/celulares/
+Redirect 301 /productos/electronicos/pantallas/smart-tv-samsung-43 https://www.rac.mx/productos/electronicos/pantallas
+Redirect 301 /productos/electronicos/pantallas/smart-tv-hisense-40 https://www.rac.mx/productos/electronicos/pantallas
+Redirect 301 /productos/electronicos/pantallas/smart-tv-panasonic-43 https://www.rac.mx/productos/electronicos/pantallas
+Redirect 301 /rac-y-covid https://www.rac.mx/
+Redirect 301 /productos/muebles/recamaras/litera-loft-i-m https://www.rac.mx/productos/muebles/recamaras/
+Redirect 301 /productos-acer https://www.rac.mx/productos/computadoras
+Redirect 301 /productos/linea-blanca/lavadoras/lmd8124pbab0 https://www.rac.mx/productos/linea-blanca/lavadoras/
+Redirect 301 /productos/electronicos/pantallas/un43tu6900fx https://www.rac.mx/productos/electronicos/pantallas
+
+Redirect 301 /productos/computadoras https://www.rac.mx/productos/laptops
+Redirect 301 /productos-aux https://www.rac.mx/productos/
+Redirect 301 /productos-spring-air https://www.rac.mx/productos/
+Redirect 301 /productos-acros https://www.rac.mx/productos/
+Redirect 301 /electronicos https://www.rac.mx/productos/electronicos/
+Redirect 301 /productoselectronicos/ https://www.rac.mx/productos/electronicos/
+Redirect 301 /linea-blanca https://www.rac.mx/productos/linea-blanca/
+Redirect 301 /productoslinea-blanca https://www.rac.mx/productos/linea-blanca/
+Redirect 301 /productosmuebles https://www.rac.mx/productos/muebles/
+Redirect 301 /muebles https://www.rac.mx/productos/muebles/
+Redirect 301 /productosmovilidad https://www.rac.mx/productos/movilidad/
+Redirect 301 /productos-mabe https://www.rac.mx/productos/linea-blanca
+
+Redirect 301 /productos/computadoras/laptops/3px26la-abm https://www.rac.mx/productos/laptops
+# END WordPress

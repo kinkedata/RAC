@@ -1,0 +1,71 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo-rac.png</argument>
+                <argument name="logo_img_width" xsi:type="number">337</argument>
+                <argument name="logo_img_height" xsi:type="number">121</argument>
+                <argument name="css_class" xsi:type="string">logo-rac</argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+    
+                <referenceContainer name="header-wrapper" htmlClass="header-top">
+                    <container name="top.elements" htmlTag="div" htmlClass="top-elements">
+                        
+                    </container>
+                </referenceContainer>
+		<referenceContainer name="header.panel" remove="true" />
+                
+                
+                
+                <referenceContainer name="page.top" remove="true" />
+                <referenceBlock name="minicart" remove="true" />
+                
+                
+                
+                
+                
+                
+                <referenceBlock name="footer_links" remove="true" />
+                <referenceBlock name="copyright" remove="true" />
+                <referenceBlock name="report.bugs" remove="true" />
+                <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+                <referenceBlock name="view.addto.compare" remove="true" />
+                <referenceBlock name="view.addto.wishlist" remove="true" />
+                <referenceBlock name="page.main.title" remove="true" />
+                <referenceBlock name="category.product.addto" remove="true" />
+                <referenceBlock name="product_list_toolbar" remove="true" />
+                <referenceBlock name="product.info" remove="true" />
+                
+                <referenceBlock name="reviews.tab" remove="true" />
+                <referenceBlock name="product.review.form" remove="true" />
+                <referenceBlock name="product.info.review" remove="true" />
+                <referenceBlock name="product.info.social" remove="true" />
+                
+                <referenceBlock name="catalog.topnav">
+                    <block class="Magento\Framework\View\Element\Html\Link">
+                            <arguments>
+                                    <argument name="label" xsi:type="string">Solicita informes</argument>
+                                    <argument name="path" xsi:type="string">solicita-informacion</argument>
+                            </arguments>
+                    </block>
+                </referenceBlock>
+                
+
+                <move element="catalog.topnav" destination="top.elements" />
+                <move element="top.search" destination="top.elements" after="-" />
+                
+
+
+                
+                
+                <referenceContainer name="head.additional">
+                        <block class="Magento\Framework\View\Element\Template" name="gtm.head" before="-" template="Magento_Theme::html/gtm_head.phtml" />
+                </referenceContainer>
+
+                <referenceContainer name="after.body.start">
+                        <block class="Magento\Framework\View\Element\Template" name="gtm.body" before="-" template="Magento_Theme::html/gtm_body.phtml" />
+                </referenceContainer>
+
+</page>

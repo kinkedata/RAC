@@ -1,0 +1,36 @@
+.card {
+	width:400px;
+}
+
+.card-logo {
+	width: 100px;
+    height: 100px;
+}
+
+.btn {
+	background-color: #004c8e;
+	font-weight: 700;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background-color: #0565be;
+}
+
+.bg-secondary {
+	background-color: #ddd !important;
+}
+
+a {
+	color: #004c8e;
+	font-weight: 500;
+}
+
+.text-primary {	
+	font-weight: 500;
+}
+
+.text-success {	
+	font-weight: 500;
+}

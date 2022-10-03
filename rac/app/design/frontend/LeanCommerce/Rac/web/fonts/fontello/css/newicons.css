@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'newicons';
+  src: url('../font/newicons.eot?71106584');
+  src: url('../font/newicons.eot?71106584#iefix') format('embedded-opentype'),
+       url('../font/newicons.woff2?71106584') format('woff2'),
+       url('../font/newicons.woff?71106584') format('woff'),
+       url('../font/newicons.ttf?71106584') format('truetype'),
+       url('../font/newicons.svg?71106584#newicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'newicons';
+    src: url('../font/newicons.svg?71106584#newicons') format('svg');
+  }
+}
+*/
+ 
+ [class^="newicn-"]:before, [class*=" newicn-"]:before {
+  font-family: "newicons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+     color: #104594;
+     font-size: 135px;
+}
+
+#beneficios .beneficio-etiqueta, #beneficios-mobile .beneficio-etiqueta, .beneficio-etiqueta{
+    margin-top: 24px !important;
+}
+
+.newicn-sinburo:before { content: '\e801'; } /* '' */
+.newicn-sinhistorial:before { content: '\e802'; } /* '' */
+.newicn-50desc:before { content: '\e803'; } /* '' */
+.newicn-congelacuenta:before { content: '\e804'; } /* '' */
+.newicn-entrega:before { content: '\e805'; } /* '' */
+.newicn-mantenimiento:before { content: '\e806'; } /* '' */
+.newicn-sinaval:before { content: '\e807'; } /* '' */
+.newicn-down-dir:before { content: '\e808'; } /* '' */
+.newicn-up-dir:before { content: '\e809'; } /* '' */
+.newicn-left-dir:before { content: '\e80a'; } /* '' */
+.newicn-right-dir:before { content: '\e80b'; } /* '' */
+.newicn-down-open:before { content: '\e80c'; } /* '' */
+.newicn-left-open:before { content: '\e80d'; } /* '' */
+.newicn-right-open:before { content: '\e80e'; } /* '' */
+.newicn-up-open:before { content: '\e80f'; } /* '' */
+.newicn-trash:before { content: '\e810'; } /* '' */
+.newicn-pencil:before { content: '\e811'; } /* '' */
+.newicn-spin6:before { content: '\e839'; } /* '' */
+.newicn-menu:before { content: '\f0c9'; } /* '' */
+.newicn-credit-card-alt:before { content: '\f283'; } /* '' */

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Build By: Jose David Velasquez Ricaldez
+ * Email: JDavidVR@hotmail.com  davidvr1710@gmail.com david.v@wagento.com
+ * Cbba - Bolivia
+ */
+-->
+<language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
+    <code>es_MX</code>
+    <vendor>jdavidvr</vendor>
+    <package>es_mx</package>
+</language>

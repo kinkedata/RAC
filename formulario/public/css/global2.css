@@ -1,0 +1,89 @@
+/* SOLICITA INFORMACION */
+
+#solicita-informes-beneficios .beneficio-item {
+    margin: 0;
+}
+
+#solicita-informes-beneficios i {
+    font-size: 115px;
+}
+
+#solicita-informes-beneficios .beneficio-etiqueta {
+    color: #636363;
+    font-size: 18px;
+}
+
+form#solicita-informes-form {
+    background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+    border-radius: 15px;
+    left: 0;
+    margin: 0 auto;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 270px;
+}
+
+form#solicita-informes-form h1 {
+    color: #5a5959;
+    font-size: 19px;
+    margin: 0 0 10px;
+}
+
+.solicita-informes-form-item {
+    margin: 0 0 5px;
+    width: 100%;
+}
+
+.solicita-informes-form-item > label {
+    font-size: 10px;
+}
+
+.solicita-informes-form-item > input {
+    border: medium none;
+    border-radius: 5px;
+    font-size: 11px;
+    height: 20px;
+    padding: 0 0 0 10px;
+    width: 100%;
+}
+
+form#solicita-informes-form .solicita-informes-send {
+    background: #004c8e none repeat scroll 0 0;
+    border: medium none;
+    color: #ffffff;
+    float: right;
+    font-family: "GothamBlack";
+    font-size: 14px;
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+form#solicita-informes-form .solicita-informes-send:hover {
+    background-color: #0565BE;
+}
+
+.solicita-informes-form-item.half {
+    display: inline-block;
+    width: 46%;
+}
+
+.solicita-informes-form-item.half.first {
+    float: left;
+}
+
+.solicita-informes-form-item.half.second {
+    float: right;
+}
+
+.solicita-informes-form-item select {
+    border-radius: 5px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    height: 20px;
+    padding: 1px 5px;
+}
+
+/* FIN SOLICITA INFORMACION */
+

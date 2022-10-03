@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page_layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/PageLayout/etc/layouts.xsd">
+
+    <layout id="1column">
+        <label translate="true">1 Column RAC</label>
+    </layout>
+    <layout id="1column-marcas">
+        <label translate="true">Marcas RAC</label>
+    </layout>
+    <layout id="2columns-left">
+        <label translate="true">2 Columns RAC</label>
+    </layout>
+    <layout id="1column-category">
+        <label translate="true">1 Column Category RAC</label>
+    </layout>
+
+</page_layouts>
